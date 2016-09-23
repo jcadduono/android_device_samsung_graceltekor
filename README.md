@@ -11,4 +11,12 @@ Add to `.repo/local_manifests/graceltekor.xml`:
 
 Then run `repo sync` to check it out.
 
+To build:
+
+```sh
+. build/envsetup.sh
+lunch omni_graceltekor-eng
+make -j5 recoveryimage
+```
+
 Kernel sources are available at: https://github.com/jcadduono/android_kernel_samsung_universal8890/tree/twrp-6.0
